@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <h1>Campgrounds</h1>
+        <p>A lot of pictures for you</p>
+        <p>
+            <a class="btn btn-outline-primary btn-lg" href="/campgrounds/new">Add New</a>
+        </p>
+    </header>
+    
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% campgrounds.forEach(function(campground){ %>
+        <div class="col-md-3 col-md-6" style="max-width:33%; max-height: 33%;">
+            <div class="img-thumbnail" style="margin-bottom: 5%; display: block;">
+                <img src="<%= campground.image %>" style="max-width:inherit; max-height: inherit;">
+                <p style="margin: 0.5rem 0px;"><strong><%= campground.name %></strong></p>
+                <p style="margin: 0.5rem 0px;">
+                    <a href="/campgrounds/<%= campground._id %>" class="btn btn-outline-primary">More Info</a>
+                </p>
+            </div>
+        </div>
+        <% }); %> 
+    </div>
+    
+</div>
+    
+<% include ../partials/footer %>

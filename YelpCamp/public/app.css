@@ -1,0 +1,29 @@
+body{
+    z-index: -1;
+    background-color: #eefbc6;
+}
+.jumbotron, #nav{
+    background-color: white;
+}
+.i{
+    color: #165825;
+}
+.flash{
+    display: block;
+    text-align: center;
+}
+
+.err{
+    background-color: pink;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.suc{
+    background-color: green;
+    color: white;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
